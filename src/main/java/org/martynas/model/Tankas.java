@@ -1,13 +1,38 @@
 package org.martynas.model;
 
-import java.awt.geom.Point2D;
+
+import java.awt.*;
 
 public class Tankas {
-    private Point2D koordinates;
+    public Point getKoordinates() {
+        return koordinates;
+    }
+
+    public void setKoordinates(Point koordinates) {
+        this.koordinates = koordinates;
+    }
+
+    public String getKryptis() {
+        return kryptis;
+    }
+
+    public void setKryptis(String kryptis) {
+        this.kryptis = kryptis;
+    }
+
+    public int getSuviai() {
+        return suviai;
+    }
+
+    public void setSuviai(int suviai) {
+        this.suviai = suviai;
+    }
+
+    private Point koordinates;
 
     private String kryptis;
 
-    private
+    private int suviai;
 
     public void pirmyn() {
     }
