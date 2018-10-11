@@ -10,6 +10,7 @@ public class AppTankas {
         Scanner sc = new Scanner(System.in);
         boolean runProgram = true;
         while(runProgram){
+            tankas.pirmyn();
             tankas.info();
             runProgram = false;
 

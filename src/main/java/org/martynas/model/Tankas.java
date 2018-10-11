@@ -8,7 +8,8 @@ public class Tankas {
 
 
     public void pirmyn() {
-
+        int i = point.getX() + 1;
+        point.setX(i);
     }
 
     public void desinen() {
