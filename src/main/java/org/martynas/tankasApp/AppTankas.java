@@ -10,12 +10,9 @@ public class AppTankas {
         Scanner sc = new Scanner(System.in);
         boolean runProgram = true;
         while(runProgram){
-            tankas.pirmyn();
-            tankas.desinen();
-            tankas.atgal();
-            tankas.kairen();
-            tankas.suvis();
             tankas.info();
+            runProgram = false;
+
         }
         sc.close();
     }

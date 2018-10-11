@@ -1,40 +1,14 @@
 package org.martynas.model;
 
 
-import java.awt.*;
-
 public class Tankas {
-    public Point getKoordinates() {
-        return koordinates;
-    }
 
-    public void setKoordinates(Point koordinates) {
-        this.koordinates = koordinates;
-    }
+    Point point = new Point();
+    private String saugotiKoordinates = "Tanko koordinates: (" + point.getX() + ";" + point.getY() + ")";
 
-    public String getKryptis() {
-        return kryptis;
-    }
-
-    public void setKryptis(String kryptis) {
-        this.kryptis = kryptis;
-    }
-
-    public int getSuviai() {
-        return suviai;
-    }
-
-    public void setSuviai(int suviai) {
-        this.suviai = suviai;
-    }
-
-    private Point koordinates;
-
-    private String kryptis;
-
-    private int suviai;
 
     public void pirmyn() {
+
     }
 
     public void desinen() {
@@ -50,5 +24,6 @@ public class Tankas {
     }
 
     public void info() {
+        System.out.println(saugotiKoordinates);
     }
 }
