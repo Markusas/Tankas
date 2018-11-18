@@ -1,20 +1,33 @@
 package org.martynas.tankasApp;
 
-import org.martynas.model.Tankas;
+import org.martynas.model.Tank;
 
 import java.util.Scanner;
 
 public class AppTankas {
     public static void main(String[] args) {
-        Tankas tankas = new Tankas();
-        Scanner sc = new Scanner(System.in);
-        boolean runProgram = true;
-        while(runProgram){
-            tankas.pirmyn();
-            tankas.info();
-            runProgram = false;
+        Tank tank = new Tank();
 
-        }
-        sc.close();
+        tank.forward();
+        tank.right();
+        tank.forward();
+        tank.shoot();
+        tank.shoot();
+        tank.left();
+        tank.shoot();
+        tank.forward();
+        tank.info();
+        tank.left();
+        tank.left();
+        tank.shoot();
+        tank.shoot();
+        tank.shoot();
+        tank.shoot();
+        tank.info();
+
+
     }
 }
+
+
+
