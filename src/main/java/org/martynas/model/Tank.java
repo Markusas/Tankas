@@ -19,7 +19,6 @@ public class Tank {
         shootHistory.put(Destination.WEST, 0);
     }
 
-    int sum = shootHistory.values().stream().mapToInt(i -> i).sum();
 
     public void forward() {
         destination = coordinates.increaseY();
@@ -50,6 +49,7 @@ public class Tank {
 
 
     public void info() {
+        int sum = shootHistory.values().stream().mapToInt(i -> i).sum();
         System.out.println(String.format("INFO: tank coordinate: %s, destination: %s", coordinates, destination));
         System.out.println(String.format("INFO: Tank's shots: %s North, %s East, %s South, %s West. Total of shots: %s",
                 shootHistory.get(Destination.NORTH),
